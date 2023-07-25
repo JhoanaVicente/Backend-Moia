@@ -1,4 +1,4 @@
-package repositories
+package com.example.backendmoia.repositories
 
 import jakarta.persistence.*
 
@@ -7,11 +7,9 @@ import jakarta.persistence.*
 @Entity
 data class Inscripcio(
     var nomCognoms: String,
-    @Lob
     var dataNaixement: Long?,
     var nomPares: String,
     var documentIdentitat: Long?,
-    @Lob
     var correu: String,
     var telefon: Long,
     var residencia: String,
